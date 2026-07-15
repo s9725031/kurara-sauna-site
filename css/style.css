@@ -1465,7 +1465,7 @@ footer small {
 @media screen and (max-width: 700px) {
 
 	.mainimg .slide .text {
-		bottom: 85px !important;
+		bottom: 115px !important;
 		padding-top: 60px !important;
 		padding-bottom: 10px !important;
 	}
@@ -1480,5 +1480,5 @@ footer small {
 
 	.mainimg .btn-container .btn:last-child {
 		margin-bottom: 0 !important;
-	}
-}ss
+	}s
+}
