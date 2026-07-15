@@ -1439,4 +1439,25 @@ footer small {
 		padding: 12px 14px !important;
 		text-align: center !important;
 	}
-}ssssss
+}
+/* スマホ版の文字をPC版のように左へ寄せる */
+@media screen and (max-width: 700px) {
+
+	.mainimg .slide .text {
+		left: 0 !important;
+		right: auto !important;
+		width: 100% !important;
+		box-sizing: border-box !important;
+		padding-left: 18px !important;
+		padding-right: 70px !important;
+		text-align: left !important;
+	}
+
+	.mainimg .slide .text h2,
+	.mainimg .slide .text h2 span,
+	.mainimg .slide .text p {
+		text-align: left !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+}ssssssss
