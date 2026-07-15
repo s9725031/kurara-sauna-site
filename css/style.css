@@ -1460,4 +1460,25 @@ footer small {
 		margin-left: 0 !important;
 		margin-right: 0 !important;
 	}
-}ssssssss
+}
+/* スマホ版の文字とボタンを上へ移動 */
+@media screen and (max-width: 700px) {
+
+	.mainimg .slide .text {
+		bottom: 85px !important;
+		padding-top: 60px !important;
+		padding-bottom: 10px !important;
+	}
+
+	.mainimg .btn-container {
+		margin-top: 12px !important;
+	}
+
+	.mainimg .btn-container .btn {
+		margin-bottom: 7px !important;
+	}
+
+	.mainimg .btn-container .btn:last-child {
+		margin-bottom: 0 !important;
+	}
+}ss
