@@ -1304,3 +1304,85 @@ footer small {
 	color: white !important;
 	text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
 }
+/* スマホでもメイン画像と文字を重ねる */
+@media screen and (max-width: 700px) {
+
+	.mainimg .slide {
+		display: grid !important;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.mainimg .slide picture,
+	.mainimg .slide .text {
+		grid-area: 1 / 1;
+	}
+
+	.mainimg .slide picture {
+		display: block;
+		width: 100%;
+		aspect-ratio: 4 / 5;
+	}
+
+	.mainimg .slide picture img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: block;
+	}
+
+	/* 画像を少し暗くする */
+	.mainimg .slide::after {
+		content: "";
+		grid-area: 1 / 1;
+		background: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.05),
+			rgba(0, 0, 0, 0.7)
+		);
+		z-index: 1;
+		pointer-events: none;
+	}
+
+	.mainimg .slide .text {
+		position: relative !important;
+		z-index: 2;
+		align-self: end;
+		padding: 25px !important;
+		margin: 0 !important;
+		background: transparent !important;
+	}
+
+	.mainimg .slide .text h2,
+	.mainimg .slide .text p {
+		color: white !important;
+	}
+
+	.mainimg .slide .text h2 {
+		font-size: 34px;
+		line-height: 1.3;
+	}
+
+	.mainimg .slide .text h2 span {
+		font-size: 14px;
+	}
+
+	.mainimg .slide .text .mb1rem {
+		font-size: 13px;
+		line-height: 1.7;
+	}
+
+	.mainimg .btn-container {
+		display: flex;
+		gap: 10px;
+	}
+
+	.mainimg .btn-container .btn {
+		flex: 1;
+	}
+
+	.mainimg .btn-container a {
+		font-size: 13px;
+		padding: 12px 8px;
+	}
+}ss
